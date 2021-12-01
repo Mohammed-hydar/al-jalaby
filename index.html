@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&family=Cairo:wght@400;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <title>تطبيق الجلابي</title>
+</head>
+<body onload="myFunction()" style="margin:0;">
+    <div id="loader">
+        <h1>الجلابي</h1>
+    </div>
+    
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+
+        <!-- Here Start The Body  -->
+        
+            <div class="acount-logo">
+                <a href="acc.html"><img width="50px" src="./images/me.jpeg" alt=""></a>
+        <h4>اخر العروض</h4>
+
+        <a href="add.html"><h5>اضافة</h5></a>
+        </div>
+
+        <!-- here start card  -->
+        <div style="padding-top: 70px;" class="cards">
+            <div class="img_c">
+                <img width="320px 240px" src="./images/kia.jpg" alt="">
+            </div>
+            <div class="para_c">
+                <div class="text_c">
+                    <h2>كيا اوبتيما</h2>
+                    <p> اصدار 2015</p>
+                </div>
+                <button onclick="openModal();currentSlide(4)">تفاصيل</button>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="img_c">
+                <img width="320px 240px" src="./images/lanc.jpg" alt="">
+            </div>
+            <div class="para_c">
+                <div class="text_c">
+                    <h2>لانسر</h2>
+                    <p> اصدار 2017</p>
+                </div>
+                <button onclick="openModal();currentSlide(4)">تفاصيل</button>
+            </div>
+        </div>
+        <div style="margin-bottom: 75px;" class="cards">
+            <div class="img_c">
+                <img width="320px 240px" src="./images/mor.jpg" alt="">
+            </div>
+            <div class="para_c">
+                <div class="text_c">
+                    <h2>مورنينق</h2>
+                    <p> اصدار 2020</p>
+                </div>
+                <button onclick="openModal();currentSlide(4)">تفاصيل</button>
+            </div>
+        </div>
+
+<!-- slide show -->
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+        <div class="mySlides">
+            <div class="numbertext">1 / 4 </div>
+            <img src="./images/kia.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <img src="./images/lanc.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="./images/mor.jpg" style="width:100%">
+        </div>
+
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+        <div class="prog">
+            <p><span>3,5000 SDG</span>:السعر</p>
+            <p>المكان:<span>الخرطوم - بحري</span></p>
+            <p>الحالة: <span>جديدة</span></p>
+            <p><span>+249926449414</span>:رقم الهاتف</p>
+            
+        </div>
+
+        <!-- <div class="column">
+            <img class="demo cursor" src="img_nature_wide.jpg" style="width:100%" onclick="currentSlide(1)"
+                alt="Nature and sunrise">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="img_snow_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="img_mountains_wide.jpg" style="width:100%" onclick="currentSlide(3)"
+                alt="Mountains and fjords">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="img_lights_wide.jpg" style="width:100%" onclick="currentSlide(4)"
+                alt="Northern Lights"> -->
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+    <nav class="nav">
+        <a href="index.html" class="nav_link nav_link-active">
+            <i class="fas fa-store nav_icon"></i>
+            <span class="nav_text"> المتجر</span>
+        </a>
+
+        <a href="se.html" class="nav_link">
+            <i class="fas fa-search"></i>
+            <span class="nav_text"> بحث</span>
+        </a>
+
+        <a href="cont.html" class="nav_link">
+            <i class="far fa-comments"></i>
+            <span class="nav_text"> الدعم</span>
+        </a>
+
+        <a href="add.html" class="nav_link">
+            <i class="fas fa-plus-circle"></i>
+            <span class="nav_text"> اضافة</span>
+        </a>
+
+        <a href="acc.html" class="nav_link">
+            <i class="fas fa-user"></i>
+            <span class="nav_text"> حسابي</span>
+        </a>
+    </nav>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="./assest/main.js"></script>
+</body>
+</html>

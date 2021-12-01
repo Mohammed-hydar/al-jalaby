@@ -1,0 +1,14 @@
+.box-up{
+    padding-top: 99px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #009570;
+    color: white;
+}
+.box-up i {
+    font-size: 80px;
+}
